@@ -59,12 +59,10 @@ En el presente trabajo tiene como finalidad generar un grafo de forma eficiente 
 Para la realización del trabajo, nuestro grupo tomó en cuenta la ciudad de La Plata, que se encuentra ubicada en Argentina. Tomamos en cuenta un total de 86 calles, lo cual estaría representado por 42 filas y 44 columnas.
 
 
-![alt text](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.002.png)
+![Mapa](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.002.png)
 
 
-![Diagrama
-
-Descripción generada automáticamente con confianza baja](Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.003.png)
+![Diagrama](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.003.png)
 
 
 
@@ -114,9 +112,7 @@ Luego de simular la ciudad, empezaremos a generar el grafo con listas de adyacen
 
 Las calles representan las aristas, mientras que las intersecciones entre calles representan los vértices. Cada intersección estará identificada por un número.
 
-![Gráfico, Gráfico de dispersión
-
-Descripción generada automáticamente](Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.004.png)
+![Gráfico](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.004.png)
 
 **Enlaces**
 
