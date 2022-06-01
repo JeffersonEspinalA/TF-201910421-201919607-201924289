@@ -17,14 +17,10 @@
 
 **Lopez Flores, Jose Rodrigo     		U201910421**
 
-
-
-
-
-
-
-
 **CICLO ACADÉMICO: 2022-1**
+
+
+
 # Índice
 **Resumen ejecutivo3**
 
