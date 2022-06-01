@@ -59,7 +59,7 @@ En el presente trabajo tiene como finalidad generar un grafo de forma eficiente 
 Para la realización del trabajo, nuestro grupo tomó en cuenta la ciudad de La Plata, que se encuentra ubicada en Argentina. Tomamos en cuenta un total de 86 calles, lo cual estaría representado por 42 filas y 44 columnas.
 
 
-![alt text]([Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.002.png](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.002.png))
+![alt text](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.002.png)
 
 
 ![Diagrama
