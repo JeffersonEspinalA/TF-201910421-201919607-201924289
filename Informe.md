@@ -1,4 +1,5 @@
-<center>**UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS!</center>[](Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.001.png)**
+![logo] (https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Aspose.Words.bd2c33f2-00cf-4bcb-b3d7-f43fc638a7f5.001.png)
+<center>**UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS**</center>
 
 **TRABAJO PARCIAL: GRAFOS** 
 
