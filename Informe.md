@@ -22,17 +22,18 @@
 
 
 # Índice
-**Resumen ejecutivo3**
 
-**Imagen estática de la ciudad o porción de ciudad elegida3**
+**Resumen ejecutivo**
 
-**Descripción de los datos consignados por calle4**
+**Imagen estática de la ciudad o porción de ciudad elegida**
 
-**Descripción de la información consignada por intersección4**
+**Descripción de los datos consignados por calle**
 
-**Explicación de cómo se elaboró el grafo4**
+**Descripción de la información consignada por intersección**
 
-**Enlaces5**
+**Explicación de cómo se elaboró el grafo**
+
+**Enlaces**
 
 
 
