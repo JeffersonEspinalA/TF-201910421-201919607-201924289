@@ -3,6 +3,7 @@ import random
 import math
 import heapq as hq
 
+
 def leerCalles():
   calles = []
   with open("source/Calles.txt") as f:
