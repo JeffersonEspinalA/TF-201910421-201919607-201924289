@@ -9,7 +9,7 @@ def leerCalles():
   with open("source/Calles.txt") as f:
       for line in f:
         calle = line.split()
-        calles.append(*calle)
+        calles.append(*calle) 
   return calles
 
 def generarIntersecciones(calles, archivo, nfilas, ncol, coordenadas):
