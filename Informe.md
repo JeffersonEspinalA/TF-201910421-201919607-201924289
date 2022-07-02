@@ -88,14 +88,14 @@ Para la elaboración del factor de tráfico, el primer paso fue definir el algor
 
 Además, para generar un factor de ruido acorde a las diferentes horas puntas de tráfico, se implementó una función que dado una determinada hora, genera un ruido perlin con picos valores mucho más altos o más bajos, los cuales son asignados a cada vértice de modo que simula el tráfico en esa hora.
 
-![Gráfico1](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/perlin.png)
+![Gráfico1](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/perlin.PNG)
 
 
 **EXPLICACIÓN DE CÓMO SE GENERÓ LA DISTANCIA ENTRE INTERSECCIONES**
 
 Para hallar la distancia entre intersecciones se utilizó el algoritmo Haversine, el cual dado la longitud y latitud de 2 puntos nos permite hallar su distancia.Su formula es la siguiente:
 
-![Gráfico2](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Haversine.png)
+![Gráfico2](https://github.com/JeffersonEspinalA/TF-201910421-201919607-201924289/blob/main/Informe/Haversine.PNG)
 
 
 **EXPLICACIÓN DE CÓMO SE BUSCA LOS 3 CAMINOS MÁS CORTOS**
