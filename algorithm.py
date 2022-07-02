@@ -4,7 +4,7 @@ import hito_3
 
 def graph():
     coordenadas = []
-    calles=hito_3.leerCalles()
+    calles = hito_3.leerCalles()
     I = hito_3.generarIntersecciones(calles, "source/Intersecciones con coordenadas.txt", 42, 44, coordenadas)
     hito_3.generarListaAdyacencia(I, coordenadas, 7)
     G = []

@@ -33,7 +33,7 @@ def generarIntersecciones(calles, archivo, nfilas, ncol, coordenadas):
   return I
 
 def updateTraffic(hour):
-  fila,colum=42,44  
+  fila, colum=42, 44  
   if hour>=22 or hour<4:
     noise = PerlinNoise(octaves=15, seed=1000)
     values= [[abs(noise([i/colum, j/fila])*30) for j in range(colum)] for i in range(fila)]
