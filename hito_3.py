@@ -9,7 +9,7 @@ def leerCalles():
   with open("source/Calles.txt") as f:
       for line in f:
         calle = line.split()
-        calles.append(*calle) 
+        calles.append(*calle)
   return calles
 
 def generarIntersecciones(calles, archivo, nfilas, ncol, coordenadas):
@@ -31,7 +31,6 @@ def generarIntersecciones(calles, archivo, nfilas, ncol, coordenadas):
         coordenadas.append((float(latitud), float(longitud)))
 
   return I
-
 
 def updateTraffic(hour):
   fila,colum=42,44  
@@ -70,7 +69,7 @@ def peso2calculo(trafficValue):
     return trafficValue*80
   else:
     return trafficValue*70
-  
+
 
 def generarListaAdyacencia(I, coordenadas, hora):
   G = []
@@ -171,5 +170,3 @@ def function_path(G, first, end, p):
   else:
     n_path = path_visualization(path, end)
     return n_path, p
-
-

@@ -94,7 +94,7 @@
 
   ctx.fillStyle = "LimeGreen";
   ctx.fillRect(x(graph.loc[s]) - 5, y(graph.loc[s]) - 5, 10, 10)
-  ctx.strokeStyle = "Green";
+  ctx.strokeStyle = "Red";
   ctx.strokeRect(x(graph.loc[s]) - 5, y(graph.loc[s]) - 5, 10, 10)
   ctx.fillStyle = "Orange";
   ctx.fillRect(x(graph.loc[t]) - 5, y(graph.loc[t]) - 5, 10, 10)
