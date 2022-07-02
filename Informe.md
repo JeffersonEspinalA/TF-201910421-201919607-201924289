@@ -105,6 +105,13 @@ Para conocer los caminos más cortos para llegar de una calle a otra se utilizó
 También está la función “path_visualization”, que es de mucha ayuda para mostrar solo el camino de inicio a fin. Las dos funciones anteriormente mencionadas estarán llamadas en la función “function_path”, para que sea más cómodo poner las argumentos. 
 
 
+**INSTRUCCIONES**
+
+●	hito_3.py : Codigo terminado en formato .py, incluido todas las funciones. 
+
+●	tfapp.py : Codigo en donde se compila el proyecto.
+
+
 **CONCLUSIONES**
 
 ●	Fueron de mucha ayuda algunos temas aprendidos en clase como los grafos y el algoritmo de Dijkstra. Para simular el mapa de la ciudad de La Plata usamos la lista de adyacencia y por matriz. 
