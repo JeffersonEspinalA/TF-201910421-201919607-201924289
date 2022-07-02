@@ -12,7 +12,7 @@
 
 ** ⋅⋅* Vilca Morales, Fulgencio Marx		U201924289**
 
-** ⋅⋅* Espinal Atencia, Jefferson William 		U201919607**
+** ⋅⋅* Espinal Atencia, Jefferson William 	U201919607**
 
 ** ⋅⋅* Lopez Flores, Jose Rodrigo     		U201910421**
 
