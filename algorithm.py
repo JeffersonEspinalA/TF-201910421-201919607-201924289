@@ -2,14 +2,12 @@ import json
 import hito_3
 
 
-
 def graph():    
-    calles = []
     coordenadas = []
     calles=hito_3.leerCalles()
     I = hito_3.generarIntersecciones(calles, "source/Intersecciones con coordenadas.txt", 42, 44, coordenadas)
-    hito_3.generarListaAdyacencia(I, coordenadas, 9)
-    #Loc = [(10, 10), (10, 24), (23, 22), (22, 11)]
+    hito_3.generarListaAdyacencia(I, coordenadas, 7)
+   
     G = []
     with open("source/Lista_Adyacencia_Generado.txt") as f:
         for line in f:
@@ -22,13 +20,12 @@ def graph():
 
     return json.dumps(response)
 
-def paths():
-    calles = []
+def paths(s,t):
     coordenadas = []
     calles=hito_3.leerCalles()
     I = hito_3.generarIntersecciones(calles, "source/Intersecciones con coordenadas.txt", 42, 44, coordenadas)
-    hito_3.generarListaAdyacencia(I, coordenadas, 9)
-    #Loc = [(10, 10), (10, 24), (23, 22), (22, 11)]
+    hito_3.generarListaAdyacencia(I, coordenadas, 7)
+    
     G = []
     with open("source/Lista_Adyacencia_Generado.txt") as f:
         for line in f:
@@ -36,8 +33,8 @@ def paths():
             G.append([])
             for i in range(0, len(nums), 2):
                 G[-1].append((int(nums[i]), nums[i+1]))
-    op1 = 1
-    op2 = 38
+    op1 = s
+    op2 = t
 
     if (op1 >= 0 and op1 <= 1728) and (op2 >= 0 and op2 <= 1728):
         shortest_paths = []

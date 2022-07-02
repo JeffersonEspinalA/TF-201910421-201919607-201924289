@@ -2,7 +2,7 @@ import numpy as np
 import random
 import math
 import heapq as hq
-
+from perlin_noise import PerlinNoise
 
 def leerCalles():
   calles = []
@@ -71,19 +71,22 @@ class Perlin:
 
 
 def updateTraffic(hour):
-  noise=Perlin()
-  time=[i*0.01 for i in range(1729)]
-  if hour>22 or hour<4:
-    values=[int(abs(noise.valueAt(i,20)*2)) for i in time]
+  fila,colum=42,44  
+  if hour>=22 or hour<4:
+    noise = PerlinNoise(octaves=15, seed=1000)
+    values= [[abs(noise([i/colum, j/fila])*30) for j in range(colum)] for i in range(fila)]
     return values
   if hour>=4 and hour<10:
-    values=[int(abs(noise.valueAt(i,50)*10)) for i in time]
+    noise = PerlinNoise(octaves=5, seed=1000)
+    values= [[abs(noise([i/colum, j/fila])*200) for j in range(colum)] for i in range(fila)]
     return values
   if hour>=10 and hour<14:
-    values=[int(abs(noise.valueAt(i,35)*8)) for i in time]
+    noise = PerlinNoise(octaves=15, seed=1000)
+    values= [[abs(noise([i/colum, j/fila])*120) for j in range(colum)] for i in range(fila)]
     return values
   if hour>=14 and hour<22:
-    values=[int(abs(noise.valueAt(i,45)*10)) for i in time]
+    noise = PerlinNoise(octaves=8, seed=1000)
+    values= [[abs(noise([i/colum, j/fila])*180) for j in range(colum)] for i in range(fila)]
     return values
 
 def haversine(lat1, lon1, lat2, lon2):
@@ -96,19 +99,21 @@ def haversine(lat1, lon1, lat2, lon2):
     return distancia
 
 def peso2calculo(trafficValue):
-  a=50-trafficValue
-  if a>=25:
-    peso2=1.3
-    return peso2
+  if(trafficValue>500):
+    return trafficValue*100
+  if(trafficValue>300 and trafficValue<=500):
+    return trafficValue*90
+  if(trafficValue>100 and trafficValue<=300):
+    return trafficValue*80
   else:
-    peso2=0.7
-    return peso2
-
+    return trafficValue*70
+  
 
 def generarListaAdyacencia(I, coordenadas, hora):
   G = []
   nfilas, ncol = np.shape(I) 
   values=updateTraffic(hora)
+  
   #Agregar las adyacencias de cada nodo
   for i in range(nfilas):
     for j in range(ncol):
@@ -119,36 +124,36 @@ def generarListaAdyacencia(I, coordenadas, hora):
         if (i > 0) and (I[i-1, j] > -1):
           latitud2, longitud2 = coordenadas[I[i-1, j]]
           peso1 = haversine(latitud1, longitud1, latitud2, longitud2)
-          traficcValue=values[i+1]
+          traficcValue=values[i][j] 
           peso2=peso2calculo(traficcValue)
-          peso=peso1*peso2
+          peso=(peso1)*peso2
           aux.append(I[i-1, j])
           aux.append(peso)
         #izquierda
         if (j > 0) and (I[i, j-1] > -1):
           latitud2, longitud2 = coordenadas[I[i, j-1]]
           peso1 = haversine(latitud1, longitud1, latitud2, longitud2)
-          traficcValue=values[i+1]
+          traficcValue=values[i][j]  
           peso2=peso2calculo(traficcValue)
-          peso=peso1*peso2
+          peso=(peso1)*peso2
           aux.append(I[i, j-1])
           aux.append(peso)
         #derecha
         if (j < ncol-1) and (I[i, j+1] > -1):
           latitud2, longitud2 = coordenadas[I[i, j+1]]
           peso1 = haversine(latitud1, longitud1, latitud2, longitud2)
-          traficcValue=values[i+1]
+          traficcValue=values[i][j] 
           peso2=peso2calculo(traficcValue)
-          peso=peso1*peso2
+          peso=(peso1)*peso2
           aux.append(I[i, j+1])
           aux.append(peso)
         #abajo
         if (i < nfilas-1) and (I[i+1, j] > -1):
           latitud2, longitud2 = coordenadas[I[i+1, j]]
           peso1 = haversine(latitud1, longitud1, latitud2, longitud2)
-          traficcValue=values[i+1]
+          traficcValue=values[i][j] 
           peso2=peso2calculo(traficcValue)
-          peso=peso1*peso2
+          peso=(peso1)*peso2
           aux.append(I[i+1, j])
           aux.append(peso)
         G.append(aux)
